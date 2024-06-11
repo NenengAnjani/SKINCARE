@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>CSS website layout</title>
+<style>
+	body {
+		font-family: Arial;
+		padding: 10px;
+		background: #f1f1f1;
+	}
+	/*style the header */
+	.header {
+		padding:120px;
+		text-align: center;
+		background: white;
+		background-image: url("bck.png");
+		background-repeat: no-reapet;
+
+	}
+
+	* {
+		box sizing: border-box;
+	}
+	/*style the top navigation bar*/
+	.topnav{
+		overflow: hidden;
+		background-color: #333;
+	}
+
+/* style the topnav links */
+.topnav a {
+	float: left;
+	display:  block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+	/* change color on hover */
+	.topnav a:hover {
+		backgroud-color: #ddd;
+		color: black;
+	}
+
+	/*create two unequal coloums that floats next to each other*/
+	.leftcolumn{
+		float: left;
+		width: 75%;
+
+	}
+	/*right column*/
+.rightcolumn{
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding left: 20px; 
+}
+ /* fake image*/
+ .fakeimg{
+ 	background-color: #aaa;
+ 	width: 100%;
+ 	padding: 20Px;
+ }
+  /*add acard effect for articles*/
+  .card {
+  	background-color: white;
+  	padding: 20px;
+  	margin-top: 20px;
+  }
+  /*clear floats after the columns*/
+  .row:: after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+
+  /*footer*/
+  .footer{
+  	padding: 20px;
+  	text-align: center;
+  	background: #ddd;
+  	margin-top: 20px;
+  }
+  /* responsive layout - when the screen is less than 800px wide, make the two columnstack on top each other instead of next to each other*/
+  @media screen and (max-width: 800px){
+  	.leftcolumn, .rightcolumn{
+  		width: 100%;
+  		padding: 0;
+  	}
+  	}
+  	/* responsive layout - when the screen is less than 400px wide, make the navigation stack on top off each other instead of next to each other*/
+  	@media screen and (max-width: 400px) {
+  		.topnav a {
+  			float: none;
+  			width: 100%;
+  		}
+  	}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1></h1>
+		<p></p>
+	</div>
+
+	<div class="topnav">
+     <a href ="#">HOME</a>
+	 <a href ="#">KATALOG</a>
+	 <a href ="#">PEMBELIAN</a>
+</div>
+
+ <div class="row">
+ 	<div class="leftcolumn">
+ 		<div class="card">
+ 			<h2>PROMOSI</h2>
+            <h5>skincare, jun 5,2024</h5>
+            <img src="iklan2.jpg"height="400px"width="100%">
+            <p>kami menghadirkan produk skincare untuk wanita indonesia</p>
+            <p> Skincare Scarlett Whitening merupakan salah satu produk perawatan kecantikan yang berasal dari Indonesia Scarlett Whitening adalah produk perawatan kulit atau skincare yang saat ini sedang naik daun. Pemilik produk Scarlett Whitening adalah Felicya Angelista, sukses meluncurkan produk perawatan kulit yang digemari oleh kaum wanita bahkan pria.
+            Semua produk dari Scarlett dibanderol dengan harga terjangkau, sehingga cocok digunakan oleh berbagai lapisan masyarakat. Bahkan, jenis untuk perawatan kulitnya pun disesuaikan dengan kebutuhan kulit orang-orang di Indonesia, sudah BPOM, halal, sehingga aman digunakan.,Produk yang satu ini cukup terkenal dengan keunggulannya yang bisa mencerahkan kulit. .</p>
+        </div>
+        <div class="card">
+        	<h2>BODY SCRAB</h2>
+        	<h5> body scrab, jun 5,2024</h5>
+        	<img src="iklan1.jpeg"height="400px"width="100%">
+        	<p>Rasakan manfaat langsung dengan produk kami yang memberikan efek instan pada kulit</p>
+            <p>Produk kedua adalah Scarlett Whitening Shower Scrub. Produk yang satu ini merupakan sabun cair keluaran Scarlett Whitening yang memiliki scrub halus yang ampuh mengangkat sel kulit mati di tubuh kamu yang mana hal tersebut akan memberikan efek halus dari kulit kamu. .</p>
+        </div>
+        <div class="card">
+        	<h2>Glowtening serum</h2>
+        	<h5> serum, jun 5,2024 </h5>
+        	<img src="iklan3.jpeg"height="500px"width="100%">
+        	<p></p>
+            <p> Produk Scarlett Whitening Glowtening Serum juga diklaim mampu mengatasi berbagai masalah kulit wajah. Salah satu rangkaian dari Scarlett ini memiliki kandungan aktif seperti vitamin C dan glutathione yang ampuh mencerahkan kulit, serta berbagai kandungan lain seperti lavender water, niacinimide, dan phyto whitening. 
+            Kandungan kandungan tersebut tentunya berfungsi sebagai antioksidan, meremajakan kulit, membantu menyamarkan bekas luka atau noda, serta melembabkan kulit wajah kamu. .</p>
+        </div>
+        <div class="card">
+        	<h2>Whitening Facial Wash </h2>
+        	<h5> facial Wash , jun 5,2024</h5>
+        	<img src="scarlet6.jpg"height="400px"width="100%">
+        	<p>nutrisi kulit wajah mu dengan serum</p>
+            <p> jika fokus utama kamu adalah mengurangi bekas bekas noda hitam,scarlet brightly ever after juga terdapat toner adalah pilihan ideal,toner ini mengandung bahan niacinamide yang membantu menyamarkan noda hitam secara keseluruhan.</p>
+        </div>
+        <div class="card">
+        	<h2>Whitening Shower Scrab</h2>
+        	<h5> Shower Scrab, jun 5,2024</h5>
+        	<img src="scarlet6.webp"height="500px"width="100%">
+        	<p>skincare untuk tubuh</p> 
+       <p>	Produk perawatan badan dari Scarlett termasuk cukup populer di berbagai kalangan. Produk perawatan badan dari Scarlett, antara lain sabun mandi cair, body scrub, serta hand and body lotion.
+        Sabun mandi cairnya terdiri dari beberapa varian, antara lain Coffee, Jolly, Cucumber, Mango, Pomegranate, Charming, dan Freshy. Sabun mandi tersebut teksturnya berupa shower scrub, sehingga terdapat butiran-butiran scrub untuk memaksimalkan pembersihan kotoran di badan dan harganya juga terjangkau loh cuman dibandrol 75rb an aja.</p>
+        </div>
+       </div>
+       <div class="rightcolumn">
+       	<div class="card">
+       		<h2>About me</h2>
+       		<img src="logo1.png"height="200px"width="100%">
+       		<p></p>
+       	</div>
+       	<div classs="card">
+       		<h3>popular post</h3>
+       		<img src="scarlet1.webp"height="300px"width="100%">
+       		<img src="scarlet7.jpg"height="250px"width="100%">
+       		<img src="scarlet9.jpg"height="350px"width="100%">
+       		<img src="logo2.png"height="300px"width="100%">
+       	</div>
+       	<div class="card">
+       		<h3>Follow Me</h3>
+       		<p>Penasaran seampuh apa sih?
+               Yuk cobain sekarang juga!
+             kamu bisa menghubungi saya melalui nomer wa +62139531                           </p>
+       	</div>
+       </div>
+   </div>
+
+   <div class="footer">
+   	<h2>Footer</h2>
+   </div>
+   
+</body>
+</html>
